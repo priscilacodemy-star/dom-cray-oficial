@@ -34,12 +34,12 @@ h1,h2,h3,.logo,.display{font-family:'Rye','Bree Serif',Georgia,serif;font-weight
 .menu-toggle{display:none;background:transparent;border:1px solid #f7e7c288;color:var(--cream);border-radius:7px;padding:7px 10px;font-weight:800}
 .hero-shell{padding:7px 7px 0;background:var(--paper)}
 .hero{position:relative;isolation:isolate;overflow:hidden;max-width:1000px;min-height:clamp(330px,49.5vw,495px);margin:auto;border:5px solid #d7b16e;border-radius:18px;background-color:var(--navy);color:var(--cream);box-shadow:inset 0 0 0 3px var(--rust),0 5px 0 #7d331e;background-image:radial-gradient(#e65b2020 .7px,transparent .9px);background-size:5px 5px}
-.hero:before{content:"";position:absolute;z-index:-1;inset:-50%;background:repeating-conic-gradient(from 25deg at 51% 50%,transparent 0 8deg,#e65b2020 9deg 11deg,transparent 12deg 18deg);pointer-events:none}
+.hero:before{display:none}
 .hero-grid{position:relative;display:grid;grid-template-columns:57% 43%;min-height:inherit;align-items:stretch}
 .hero-photo{position:relative;min-height:inherit;overflow:hidden;isolation:isolate}
 .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 49%;filter:grayscale(.36) sepia(.46) saturate(1.7) contrast(1.35)}
 .hero-art{background-image:url('approved-art-source.jpg');background-size:177% auto;background-position:left 39.2%;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 72%,transparent 100%);mask-image:linear-gradient(90deg,#000 0%,#000 72%,transparent 100%)}
-.hero-art:after{display:none}
+.hero-art:after{display:block;background:linear-gradient(90deg,transparent 48%,var(--navy) 100%),linear-gradient(0deg,var(--navy) 0%,transparent 18%);mix-blend-mode:normal;opacity:1}
 .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 72%,var(--navy) 100%),linear-gradient(0deg,#cf451a72,transparent 65%),radial-gradient(#071426b0 .7px,transparent 1px);background-size:auto,auto,4px 4px;mix-blend-mode:multiply;opacity:.9}
 .hero-copy{position:relative;display:flex;flex-direction:column;justify-content:center;padding:20px clamp(18px,3vw,30px) 18px}
 .eyebrow{font-size:clamp(8px,1.15vw,13px);font-weight:900;text-transform:uppercase;letter-spacing:.18em;color:var(--gold)}
@@ -64,7 +64,7 @@ h1 span:last-child{color:var(--orange);-webkit-text-stroke:2.2px var(--orange);t
 .band-photo{object-position:center 45%;filter:grayscale(.16) sepia(.18) saturate(1.28) contrast(1.12)}
 .artist-copy{padding:4px 5px;align-self:center}
 .kicker{display:inline-block;background:var(--rust);color:var(--cream);border:2px solid var(--orange);border-radius:99px;padding:3px 9px;font-size:clamp(7px,.9vw,10px);font-weight:900;letter-spacing:.12em;text-transform:uppercase}
-.artist-copy h2{font-size:clamp(21px,6vw,57px);line-height:.9;margin:4px 0;color:var(--navy);text-shadow:2px 2px #e65b2040}
+.artist-copy h2{font-size:clamp(21px,4vw,40px);line-height:.9;margin:4px 0;color:var(--navy);text-shadow:2px 2px #e65b2040}
 .artist-copy p{font-size:clamp(7px,1.55vw,14px);line-height:1.35;margin:4px 0}
 .text-link{color:var(--rust);font-size:clamp(7px,1.2vw,12px);font-weight:900;text-transform:uppercase;text-decoration:underline;text-underline-offset:3px}
 .quick{padding:0 8px 13px;background:var(--cream)}
